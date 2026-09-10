@@ -1,0 +1,2100 @@
+{
+  "title": "Base de données des planètes de Star Wars",
+  "description": "Caractéristiques détaillées des planètes majeures de la galaxie de Star Wars.",
+  "planets": [
+    {
+      "nom": "Tatooine",
+      "region": "Bordure Extérieure",
+      "secteur": "Secteur Arkanis",
+      "climat": "Aride / Désertique",
+      "terrain": "Déserts de sable, canyons, mers d'dunes",
+      "gravite": "1.0 G (Standard)",
+      "diametre_km": 10465,
+      "periode_rotation_heures": 23,
+      "periode_revolution_jours": 304,
+      "population": 200000,
+      "capitales_villes_principales": [
+        "Mos Eisley",
+        "Mos Espa",
+        "Bestine"
+      ],
+      "especes_natives": [
+        "Jawas",
+        "Hommes des Sables (Tuskens)"
+      ],
+      "affiliations_majeures": [
+        "Empire Galactique",
+        "Cartel des Hutt",
+        "Alliance Rebelle"
+      ],
+      "evenements_marquants": [
+        "Lieu d'enfance d'Anakin Skywalker et de Luke Skywalker",
+        "Quartier général du seigneur du crime Jabba le Hutt",
+        "Course de pods de la Fête de Boonta Eve"
+      ],
+      "description": "Planète désertique tournant autour de deux soleils (Tatoo I et Tatoo II). Reculée et rude, elle est contrôlée par le cartel des Hutts et abrite des contrebandiers, des fermiers d'humidité et des créatures dangereuses.",
+      "logements": [
+        {
+          "id_logement": "TAT-001",
+          "titre": "Ferme d'Humidité Traditionnelle & Suite Sous-Terraine",
+          "type_propriete": "Ferme igloo troglodyte",
+          "hote": {
+            "nom": "Beru L.",
+            "superhote": true,
+            "note_hote": 4.95,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 120,
+          "note_moyenne": 4.92,
+          "nombre_avis": 128,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 3,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Vaporisateurs d'humidité",
+            "Cuisine équipée de lait bleu",
+            "Garage pour landspeeder",
+            "Climatisation souterraine",
+            "Dôme d'observation des soleils coucher"
+          ],
+          "reglement_interieur": [
+            "Pas de drosophiles",
+            "Verrouiller le hangar en cas de raid Tusken",
+            "Animaux acceptés (Banthas à l'extérieur)"
+          ],
+          "description": "Séjournez au cœur du désert de Great Margins dans une authentique ferme d'humidité. Rafraîchissante sous terre, offre une vue panoramique imprenable sur le coucher des deux soleils depuis la surface."
+        },
+        {
+          "id_logement": "TAT-002",
+          "titre": "Penthouse de Charme surplombant le Port de Mos Eisley",
+          "type_propriete": "Appartement de ville en brique de terre",
+          "hote": {
+            "nom": "Wuher",
+            "superhote": false,
+            "note_hote": 4.3,
+            "delai_reponse": "dans les quelques heures"
+          },
+          "tarif_credits_par_nuit": 85,
+          "note_moyenne": 4.25,
+          "nombre_avis": 89,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Proximité Cantina (10m)",
+            "Filtre à poussière haute puissance",
+            "Bar privé",
+            "Détecteur d'armes à l'entrée"
+          ],
+          "reglement_interieur": [
+            "Pas de droïdes autorisés dans l'immeuble",
+            "Pas de tirs de blasters après 22h"
+          ],
+          "description": "Au centre de l'action de Mos Eisley. Idéal pour les pilotes en escale et les contrebandiers de passage. Ambiance animée garantie au son de la musique de la Cantina."
+        },
+        {
+          "id_logement": "TAT-003",
+          "titre": "Sandcrawler Rétro Aménagé dans la Mer de Dunes",
+          "type_propriete": "Véhicule itinérant / Glamping désertique",
+          "hote": {
+            "nom": "Clan Jawa 42",
+            "superhote": true,
+            "note_hote": 4.88,
+            "delai_reponse": "quelques jours"
+          },
+          "tarif_credits_par_nuit": 160,
+          "note_moyenne": 4.79,
+          "nombre_avis": 64,
+          "capacite": {
+            "voyageurs": 6,
+            "chambres": 3,
+            "lits": 6,
+            "salles_de_bain": 2
+          },
+          "equipements": [
+            "Atelier de réparation droïde",
+            "Vue panoramique mobile",
+            "Panneaux solaires avancés",
+            "Système de chenilles tout-terrain"
+          ],
+          "reglement_interieur": [
+            "Gardez un œil sur vos objets de valeur",
+            "Ne pas toucher aux commandes du chenillard"
+          ],
+          "description": "Une expérience immersive unique ! Un authentique Sandcrawler réaménagé en loft industriel chic. Changez de décor désertique chaque matin au réveil."
+        },
+        {
+          "id_logement": "TAT-004",
+          "titre": "Villa de Luxe VIP près de la Loge de Mos Espa",
+          "type_propriete": "Villa privée avec patio",
+          "hote": {
+            "nom": "Gardulla T.",
+            "superhote": false,
+            "note_hote": 4.5,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 450,
+          "note_moyenne": 4.65,
+          "nombre_avis": 32,
+          "capacite": {
+            "voyageurs": 8,
+            "chambres": 4,
+            "lits": 5,
+            "salles_de_bain": 3
+          },
+          "equipements": [
+            "Bassin de rafraîchissement",
+            "Chef privé sur demande",
+            "Loge privée pour les courses de pods",
+            "Sécurité gardée par des Gamorréens"
+          ],
+          "reglement_interieur": [
+            "Fêtes autorisées",
+            "Pas de paris clandestins non déclarés"
+          ],
+          "description": "Profitez du luxe absolu dans le désert. Idéal pour assister à la fête de Boonta Eve avec une vue directe sur la ligne de départ de l'arène de pods."
+        }
+      ]
+    },
+    {
+      "nom": "Coruscant",
+      "region": "Noyau Profond",
+      "secteur": "Secteur Coruscant",
+      "climat": "Contrôlé artificiellement",
+      "terrain": "Océan urbain (Œcuménopole)",
+      "gravite": "1.0 G (Standard)",
+      "diametre_km": 12240,
+      "periode_rotation_heures": 24,
+      "periode_revolution_jours": 368,
+      "population": 1000000000000,
+      "capitales_villes_principales": [
+        "Coruscant City (Uscru District, Sénat, Temple Jedi)"
+      ],
+      "especes_natives": [
+        "Humains (origine supposée)"
+      ],
+      "affiliations_majeures": [
+        "République Galactique",
+        "Empire Galactique",
+        "Nouvelle République"
+      ],
+      "evenements_marquants": [
+        "Siège du Sénat Galactique et du Conseil Jedi",
+        "Bataille de Coruscant (Guerre des Clones)",
+        "Proclamation de l'Empire Galactique par Palpatine"
+      ],
+      "description": "Planète-capitale de la galaxie entièrement couverte par une immense cité mille-feuille composée de centaines de niveaux, centre politique, culturel et économique majeur.",
+      "logements": [
+        {
+          "id_logement": "COR-001",
+          "titre": "Loft Exécutif Ultra-Moderne avec Vue sur le Sénat",
+          "type_propriete": "Appartement d'architecte",
+          "hote": {
+            "nom": "Bail O.",
+            "superhote": true,
+            "note_hote": 4.99,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 850,
+          "note_moyenne": 4.97,
+          "nombre_avis": 210,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 2.5
+          },
+          "equipements": [
+            "Plateforme d'atterrissage privée pour Speeder",
+            "Droïde majordome Protocolaire",
+            "Baies vitrées panoramiques anti-bruit",
+            "Holonet haut débit dédié"
+          ],
+          "reglement_interieur": [
+            "Tenue correcte exigée dans le hall",
+            "Pas d'activités séparatistes"
+          ],
+          "description": "Niveau 512, situé dans le quartier le plus prestigieux de Coruscant. Offre une vue spectaculaire sur la rotonde du Sénat Galactique et le Temple Jedi."
+        },
+        {
+          "id_logement": "COR-002",
+          "titre": "Studio Cyberpunk Underground - Niveau 1313",
+          "type_propriete": "Micro-studio urbain",
+          "hote": {
+            "nom": "Sugi",
+            "superhote": false,
+            "note_hote": 4.4,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 45,
+          "note_moyenne": 4.18,
+          "nombre_avis": 305,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Lumières néon régulables",
+            "Sécurité biométrique renforcée",
+            "Synthétiseur de nourriture de rue",
+            "Accès direct au marché noir"
+          ],
+          "reglement_interieur": [
+            "Ne posez pas de questions aux voisins",
+            "Vérifiez vos verrous"
+          ],
+          "description": "Plongez dans l'ambiance authentique des sous-sols de Coruscant. Parfait pour les voyageurs à petit budget seeking l'excitation de la ville basse."
+        },
+        {
+          "id_logement": "COR-003",
+          "titre": "Duplex avec Jardin Suspendu dans le Quartier des Artistes",
+          "type_propriete": "Duplex de luxe",
+          "hote": {
+            "nom": "Silya S.",
+            "superhote": true,
+            "note_hote": 4.91,
+            "delai_reponse": "dans les 2 heures"
+          },
+          "tarif_credits_par_nuit": 400,
+          "note_moyenne": 4.86,
+          "nombre_avis": 95,
+          "capacite": {
+            "voyageurs": 5,
+            "chambres": 3,
+            "lits": 3,
+            "salles_de_bain": 2
+          },
+          "equipements": [
+            "Jardin intérieur d'arbres rares de Naboo",
+            "Baignoire d me hydro-massage",
+            "Service de navette câblée",
+            "Bibliothèque Holocron"
+          ],
+          "reglement_interieur": [
+            "Non-fumeur",
+            "Respecter le calme du jardin"
+          ],
+          "description": "Un havre de verdure au milieu de la métropole d'acier. Profitez du calme absolu à quelques centaines de mètres au-dessus du trafic galactique."
+        },
+        {
+          "id_logement": "COR-004",
+          "titre": "Chambre Cosy chez l'Habitant près de l me Opéra Galactique",
+          "type_propriete": "Chambre privée dans un appartement",
+          "hote": {
+            "nom": "Dexter J.",
+            "superhote": false,
+            "note_hote": 4.8,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 90,
+          "note_moyenne": 4.75,
+          "nombre_avis": 142,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Petit-déjeuner offert au Diner de Dex",
+            "Wi-Fi Holonet",
+            "Conseils d'expert sur la ville"
+          ],
+          "reglement_interieur": [
+            "Pas de bruit après minuit",
+            "Aimer les discussions d'information"
+          ],
+          "description": "Chambre accueillante située au-dessus du célèbres diner de Coco Town. Un café chaud et des conseils d'initiés garantis à votre réveil !"
+        }
+      ]
+    },
+    {
+      "nom": "Naboo",
+      "region": "Moyenne Bordure",
+      "secteur": "Secteur Chommell",
+      "climat": "Tempéré",
+      "terrain": "Plaines herbeuses, collines, marais, océans intérieurs",
+      "gravite": "1.0 G (Standard)",
+      "diametre_km": 12120,
+      "periode_rotation_heures": 26,
+      "periode_revolution_jours": 312,
+      "population": 4500000000,
+      "capitales_villes_principales": [
+        "Theed",
+        "Otoh Gunga"
+      ],
+      "especes_natives": [
+        "Gungans"
+      ],
+      "affiliations_majeures": [
+        "République Galactique",
+        "Alliance des Naboo et Gungans"
+      ],
+      "evenements_marquants": [
+        "Invasion par la Fédération du Commerce",
+        "Planète natale de Padmé Amidala et de Sheev Palpatine",
+        "Bataille de Naboo"
+      ],
+      "description": "Planète paisible et magnifique dotée d'un cœur poreux rempli de voies d'eau souterraines. Coexistent à sa surface la culture humaine raffinée et la cité subaquatique des Gungans.",
+      "logements": [
+        {
+          "id_logement": "NAB-001",
+          "titre": "Palais Estival Privé au Bord du Lac Di Sola",
+          "type_propriete": "Villa royale",
+          "hote": {
+            "nom": "Jobal N.",
+            "superhote": true,
+            "note_hote": 5.0,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 600,
+          "note_moyenne": 4.98,
+          "nombre_avis": 112,
+          "capacite": {
+            "voyageurs": 6,
+            "chambres": 3,
+            "lits": 4,
+            "salles_de_bain": 3
+          },
+          "equipements": [
+            "Ponton privé avec Gondole aquatique",
+            "Terrasse avec vue panoramique sur les chutes",
+            "Piano classique",
+            "Jardins de fleurs royales"
+          ],
+          "reglement_interieur": [
+            "Tenue élégante requise sur la terrasse",
+            "Pas de politique à table"
+          ],
+          "description": "La retraite romantique par excellence. Mêmes cascades et jardins que ceux où Anakin et Padmé sont tombés amoureux. Sérénité absolue."
+        },
+        {
+          "id_logement": "NAB-002",
+          "titre": "Bulle Subaquatique de Luxe à Otoh Gunga",
+          "type_propriete": "Dôme sous-marin hydro-statique",
+          "hote": {
+            "nom": "Mboss T.",
+            "superhote": false,
+            "note_hote": 4.6,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 280,
+          "note_moyenne": 4.71,
+          "nombre_avis": 78,
+          "capacite": {
+            "voyageurs": 3,
+            "chambres": 1,
+            "lits": 2,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Vue à 360° sur la faune aquatique",
+            "Champ de force respirable",
+            "Plateforme de sous-marin Bongo"
+          ],
+          "reglement_interieur": [
+            "Ne pas frapper sur les parois en verre",
+            "Attention aux monstres marins Sando"
+          ],
+          "description": "Dormez sous l'eau dans une cité gungan féerique. Une expérience immersive spectaculaire entourée de la lumière bioluminescente des profondeurs."
+        },
+        {
+          "id_logement": "NAB-003",
+          "titre": "Maison de Ville Historique près du Palais de Theed",
+          "type_propriete": "Maison traditionnelle en pierre",
+          "hote": {
+            "nom": "Sio B.",
+            "superhote": true,
+            "note_hote": 4.87,
+            "delai_reponse": "dans les 3 heures"
+          },
+          "tarif_credits_par_nuit": 210,
+          "note_moyenne": 4.82,
+          "nombre_avis": 156,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 1.5
+          },
+          "equipements": [
+            "Balcon surplombant le fleuve Solleu",
+            "Architecture Renaissance de Naboo",
+            "Cuisine gastronomique équipée"
+          ],
+          "reglement_interieur": [
+            "Respecter le patrimoine architectural"
+          ],
+          "description": "Découvrez le charme culturel de la capitale. Située à 5 minutes à pied du palais royal, des arènes et des grands musées d'art de Naboo."
+        },
+        {
+          "id_logement": "NAB-004",
+          "titre": "Cottage Champêtre dans les Plaines Verdoyantes",
+          "type_propriete": "Chalet éco-responsable",
+          "hote": {
+            "nom": "Ryoo N.",
+            "superhote": true,
+            "note_hote": 4.93,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 130,
+          "note_moyenne": 4.89,
+          "nombre_avis": 91,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 3,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Vélos pour explorer les prairies",
+            "Verger bio privé",
+            "Cheminée à pierre",
+            "Barbecue extérieur"
+          ],
+          "reglement_interieur": [
+            "Attention aux troupeaux d'Shaaks sauvages"
+          ],
+          "description": "Entouré de collines verdoyantes à perte de vue. Un havre de paix idéal pour les familles et les amoureux de la nature."
+        }
+      ]
+    },
+    {
+      "nom": "Alderaan",
+      "region": "Mondes du Noyau",
+      "secteur": "Secteur Alderaan",
+      "climat": "Tempéré",
+      "terrain": "Montagnes enneigées, vallées verdoyantes, lacs, forêts",
+      "gravite": "1.0 G (Standard)",
+      "diametre_km": 12500,
+      "periode_rotation_heures": 24,
+      "periode_revolution_jours": 364,
+      "population": 2000000000,
+      "capitales_villes_principales": [
+        "Aldera (Capitale)"
+      ],
+      "especes_natives": [
+        "Humains (Alderaaniens)"
+      ],
+      "affiliations_majeures": [
+        "République Galactique",
+        "Alliance Rebelle"
+      ],
+      "evenements_marquants": [
+        "Planète d'adoption de la Princesse Leia Organa",
+        "Destruction totale par la première Étoile de la Mort sous l'ordre du Grand Moff Tarkin"
+      ],
+      "description": "Surnommée le 'Joyau du Noyau', Alderaan était un havre de paix, de culture et d'art sans armée permanente, symbole tragique des horreurs de l'Empire.",
+      "logements": [
+        {
+          "id_logement": "ALD-001",
+          "titre": "Château Alpin avec Vue sur les Pics Enneigés d'Aldera",
+          "type_propriete": "Château de montagne",
+          "hote": {
+            "nom": "Breha O.",
+            "superhote": true,
+            "note_hote": 5.0,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 750,
+          "note_moyenne": 4.99,
+          "nombre_avis": 140,
+          "capacite": {
+            "voyageurs": 10,
+            "chambres": 5,
+            "lits": 7,
+            "salles_de_bain": 4.5
+          },
+          "equipements": [
+            "Héliport privé",
+            "Piscine intérieure chauffée",
+            "Spa et sauna",
+            "Chef étoilé à disposition"
+          ],
+          "reglement_interieur": [
+            "Pas d'armes à feu ni de blasters dans le domaine (Zone de paix)"
+          ],
+          "description": "Séjour d'exception dans les montagnes majestueuses d'Alderaan. Design épuré mêlant verre transparent et pierre naturelle locale."
+        },
+        {
+          "id_logement": "ALD-002",
+          "titre": "Appartement d'Artiste dans la Cité Flottante de Crevasse",
+          "type_propriete": "Appartement suspendu",
+          "hote": {
+            "nom": "Winter R.",
+            "superhote": true,
+            "note_hote": 4.92,
+            "delai_reponse": "dans les 2 heures"
+          },
+          "tarif_credits_par_nuit": 230,
+          "note_moyenne": 4.88,
+          "nombre_avis": 88,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Sol en verre au-dessus du canyon",
+            "Atelier de peinture fourni",
+            "Télescope d'observation astronomique"
+          ],
+          "reglement_interieur": [
+            "Interdit aux personnes sujettes au vertige"
+          ],
+          "description": "Suspendu entre deux falaises rocheuses impressionnantes, cet appartement offre une expérience visuelle à couper le souffle au-dessus du vide."
+        },
+        {
+          "id_logement": "ALD-003",
+          "titre": "Chalet de Bois Écologique au Bord du Lac Cloud",
+          "type_propriete": "Chalet éco-design",
+          "hote": {
+            "nom": "Ulay B.",
+            "superhote": false,
+            "note_hote": 4.75,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 170,
+          "note_moyenne": 4.79,
+          "nombre_avis": 53,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Kayaks mis à disposition",
+            "Ponton en bois",
+            "Poêle à bois scandinave",
+            "Énergie 100% renouvelable"
+          ],
+          "reglement_interieur": [
+            "Tri sélectif strict",
+            "Pas de moteurs à combustion sur le lac"
+          ],
+          "description": "Ressourcez-vous au bord de l'eau cristalline du Lac Cloud. Activités nautiques douces, pêche responsable et randonnées pédestres."
+        },
+        {
+          "id_logement": "ALD-004",
+          "titre": "Penthouse de la Métropole de Jurai",
+          "type_propriete": "Penthouse moderne",
+          "hote": {
+            "nom": "Raymus A.",
+            "superhote": true,
+            "note_hote": 4.85,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 320,
+          "note_moyenne": 4.81,
+          "nombre_avis": 112,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 2
+          },
+          "equipements": [
+            "Terrasse végétale panoramique",
+            "Système domotique vocal",
+            "Accès direct au grand opéra"
+          ],
+          "reglement_interieur": [
+            "Animaux de compagnie autorisés"
+          ],
+          "description": "Alliez le confort ultra-moderne au raffinement de la culture alderaanienne dans le centre financier et artistique de la planète."
+        }
+      ]
+    },
+    {
+      "nom": "Hoth",
+      "region": "Bordure Extérieure",
+      "secteur": "Secteur Anoat",
+      "climat": "Glacial / Sub-zéro",
+      "terrain": "Plaines de glace, crevasses, grottes glacées, montagnes de neige",
+      "gravite": "1.1 G",
+      "diametre_km": 7200,
+      "periode_rotation_heures": 23,
+      "periode_revolution_jours": 549,
+      "population": 0,
+      "capitales_villes_principales": [
+        "Base Écho (Base militaire temporaire)"
+      ],
+      "especes_natives": [
+        "Wampas",
+        "Tauntauns"
+      ],
+      "affiliations_majeures": [
+        "Alliance Rebelle"
+      ],
+      "evenements_marquants": [
+        "Bataille de Hoth (attaque des Quadripodes TB-TT impériaux)",
+        "Évacuation de la Base Écho par les Rebelles"
+      ],
+      "description": "Monde désolé et congelé, battu par des tempêtes de neige constantes. Elle servit de refuge secret clandestin à l'Alliance Rebelle après la destruction de l'Étoile de la Mort.",
+      "logements": [
+        {
+          "id_logement": "HOT-001",
+          "titre": "Igloo Premium Chauffé par Géothermie",
+          "type_propriete": "Dôme thermique isolé",
+          "hote": {
+            "nom": "Commander Bren",
+            "superhote": true,
+            "note_hote": 4.89,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 180,
+          "note_moyenne": 4.84,
+          "nombre_avis": 72,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Chauffage géothermique 25°C garanti",
+            "Combinaisons thermiques fournies",
+            "Chocolat chaud galactique à volonté",
+            "Dôme de verre thermique pour aurores boréales"
+          ],
+          "reglement_interieur": [
+            "Ne pas sortir sans balise de détresse",
+            "Ne pas nourrir les Wampas"
+          ],
+          "description": "Découvrez le pôle nord dans un confort surprenant. Observation nocturne exceptionnelle des tempêtes d'aurores polaires depuis votre lit douillet."
+        },
+        {
+          "id_logement": "HOT-002",
+          "titre": "Bunker Militaire Réaménagé dans la Glace",
+          "type_propriete": "Bunker souterrain",
+          "hote": {
+            "nom": "Torryn F.",
+            "superhote": false,
+            "note_hote": 4.6,
+            "delai_reponse": "dans les 4 heures"
+          },
+          "tarif_credits_par_nuit": 110,
+          "note_moyenne": 4.52,
+          "nombre_avis": 45,
+          "capacite": {
+            "voyageurs": 6,
+            "chambres": 2,
+            "lits": 6,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Porte blindée anti-blizzard",
+            "Réserve de rations pour 1 mois",
+            "Générateur d'urgence shielded"
+          ],
+          "reglement_interieur": [
+            "Maintenir les portes étanches fermées"
+          ],
+          "description": "Ambiance vintage militaire pour ce bunker taillé à même la glace glaciaire. Idéal pour les groupes d'aventuriers et les passionnés d'histoire."
+        },
+        {
+          "id_logement": "HOT-003",
+          "titre": "Station de Recherche Glaciologique Privée",
+          "type_propriete": "Module scientifique haut de gamme",
+          "hote": {
+            "nom": "Dr. Arkanis",
+            "superhote": true,
+            "note_hote": 4.95,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 290,
+          "note_moyenne": 4.91,
+          "nombre_avis": 38,
+          "capacite": {
+            "voyageurs": 3,
+            "chambres": 1,
+            "lits": 2,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Laboratoire d'observation",
+            "Snowspeeder de courtoisie",
+            "Connexion Holonet satellite longue portée"
+          ],
+          "reglement_interieur": [
+            "Interdiction d'exporter des échantillons biologiques"
+          ],
+          "description": "Vivez comme un chercheur polaire avec tout le confort moderne. Comprend l'accès à un véhicule d'exploration des neiges guidé par GPS."
+        },
+        {
+          "id_logement": "HOT-004",
+          "titre": "Refuge de Montagne en Grotte de Cristal Glacé",
+          "type_propriete": "Grotte naturelle aménagée",
+          "hote": {
+            "nom": "Dak R.",
+            "superhote": false,
+            "note_hote": 4.3,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 75,
+          "note_moyenne": 4.21,
+          "nombre_avis": 29,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 2,
+            "salles_de_bain": 0.5
+          },
+          "equipements": [
+            "Sacs de couchage extrême (-50°C)",
+            "Feu de camp ionique sécurisé",
+            "Espace de stockage pour Tauntauns"
+          ],
+          "reglement_interieur": [
+            "Entretien des Tauntauns à la charge du voyageur"
+          ],
+          "description": "Expérience de survie authentique et rustique pour les vrais trappeurs galactiques. Des falaises d'eaux gelées étincelantes sous les spots."
+        }
+      ]
+    },
+    {
+      "nom": "Dagobah",
+      "region": "Bordure Extérieure",
+      "secteur": "Secteur Sluis",
+      "climat": "Humide / Tropical",
+      "terrain": "Marécages, forêts humides, lagunes, bogs",
+      "gravite": "0.9 G",
+      "diametre_km": 14410,
+      "periode_rotation_heures": 23,
+      "periode_revolution_jours": 341,
+      "population": 1,
+      "capitales_villes_principales": [],
+      "especes_natives": [
+        "Dragons-serpents",
+        "Nudibranches géants"
+      ],
+      "affiliations_majeures": [
+        "Ordre Jedi (Exil)"
+      ],
+      "evenements_marquants": [
+        "Refuge et exil du Maître Jedi Yoda pendant plus de 20 ans",
+        "Entraînement Jedi de Luke Skywalker",
+        "Épreuve de la Grotte du Côté Obscur"
+      ],
+      "description": "Planète marécageuse méconnue et isolée, débordante d'une force vitale brute. Fortement imprégnée de la Force, elle masquait la présence du Maître Yoda aux yeux de l'Empereur.",
+      "logements": [
+        {
+          "id_logement": "DAG-001",
+          "titre": "Cabane Organique dans l'Arbre Gnarltree",
+          "type_propriete": "Maison de terre & racines",
+          "hote": {
+            "nom": "Yoda",
+            "superhote": true,
+            "note_hote": 5.0,
+            "delai_reponse": "si la Force le veut"
+          },
+          "tarif_credits_par_nuit": 50,
+          "note_moyenne": 4.96,
+          "nombre_avis": 500,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 0.5
+          },
+          "equipements": [
+            "Soupe de racines fraîches offerte",
+            "Espace de méditation intensif",
+            "Feu de bois humide naturel",
+            "Bâton de marche fourni"
+          ],
+          "reglement_interieur": [
+            "Faire ou ne pas faire, il n'y a pas d'essayer",
+            "Patience vous devez avoir"
+          ],
+          "description": "Une petite cabane mystique creusée au cœur d'une racine géante. Parfait pour une retraite spirituelle, un jeûne méditatif et la connexion avec la Force."
+        },
+        {
+          "id_logement": "DAG-002",
+          "titre": "Eco-Lodge Flottant sur la Lagune Brumeuse",
+          "type_propriete": "Péniche de marais bio-sourcée",
+          "hote": {
+            "nom": "R2-S2 (Unité locale)",
+            "superhote": true,
+            "note_hote": 4.88,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 95,
+          "note_moyenne": 4.74,
+          "nombre_avis": 42,
+          "capacite": {
+            "voyageurs": 3,
+            "chambres": 1,
+            "lits": 2,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Répulser d'insectes marécageux",
+            "Filtre à eau de marais ultra-performant",
+            "Canne à pêche laser"
+          ],
+          "reglement_interieur": [
+            "Ne pas s'éloigner du ponton sans guide",
+            "Garder les néons éteints la nuit"
+          ],
+          "description": "Flottez paisiblement sur les eaux calmes du marais. Une expérience immersive au milieu des sons de la faune nocturne exotique."
+        },
+        {
+          "id_logement": "DAG-003",
+          "titre": "Module d'Exploration Crashé & Converti en Loft Rustique",
+          "type_propriete": "Vaisseau reconditionné",
+          "hote": {
+            "nom": "Jek T.",
+            "superhote": false,
+            "note_hote": 4.2,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 70,
+          "note_moyenne": 4.35,
+          "nombre_avis": 31,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Générateur d'urgence à fission",
+            "Cockpit aménagé en salon",
+            "Radio secours secours courte portée"
+          ],
+          "reglement_interieur": [
+            "Attention aux serpents-dragons qui s'accrochent à la coque"
+          ],
+          "description": "Un cockpit de cargo spatial transformé en cocon douillet au milieu de la jungle touffue. Pour les amateurs d'aventure hors des sentiers battus."
+        },
+        {
+          "id_logement": "DAG-004",
+          "titre": "Plateforme Suspendue dans la Canopée Marécageuse",
+          "type_propriete": "Cabane dans les arbres",
+          "hote": {
+            "nom": "Teebo M.",
+            "superhote": true,
+            "note_hote": 4.79,
+            "delai_reponse": "dans les 3 heures"
+          },
+          "tarif_credits_par_nuit": 110,
+          "note_moyenne": 4.68,
+          "nombre_avis": 53,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Vue au-dessus de la couche de brouillard",
+            "Moustiquaires magiques",
+            "Harnais de sécurité fournis"
+          ],
+          "reglement_interieur": [
+            "Interdit d'escalader sans mousqueton"
+          ],
+          "description": "Échappez à l'humidité du sol en séjournant à 30 mètres de hauteur dans la canopée. Étonnamment lumineux et très ventilé !"
+        }
+      ]
+    },
+    {
+      "nom": "Bespin",
+      "region": "Bordure Extérieure",
+      "secteur": "Secteur Anoat",
+      "climat": "Tempéré dans la zone habitable (Life Zone)",
+      "terrain": "Géante gazeuse",
+      "gravite": "1.0 G (au niveau de la Cité des Nuages)",
+      "diametre_km": 118000,
+      "periode_rotation_heures": 12,
+      "periode_revolution_jours": 5110,
+      "population": 6000000,
+      "capitales_villes_principales": [
+        "La Cité des Nuages (Cloud City)"
+      ],
+      "especes_natives": [
+        "Ugnaughts (immigrés)",
+        "Beldons"
+      ],
+      "affiliations_majeures": [
+        "Guilde des Mineurs",
+        "Empire Galactique (occupation temporaire)"
+      ],
+      "evenements_marquants": [
+        "Trahison et rachat de Lando Calrissian",
+        "Congélation de Han Solo dans la carbonite",
+        "Duel au sabre laser entre Luke Skywalker et Darth Vader ('Je suis ton père')"
+      ],
+      "description": "Géante gazeuse possédant une fine couche d'atmosphère respirable. La Cité des Nuages y flotte majestueusement pour en extraire le précieux gaz Tibanna utilisé dans les blasters et hyperdrive.",
+      "logements": [
+        {
+          "id_logement": "BES-001",
+          "titre": "Suite Royale de Cloud City avec Vue Périphérique 360°",
+          "type_propriete": "Suite penthouse de grand luxe",
+          "hote": {
+            "nom": "Lando C.",
+            "superhote": true,
+            "note_hote": 4.97,
+            "delai_reponse": "dans l'instant"
+          },
+          "tarif_credits_par_nuit": 920,
+          "note_moyenne": 4.95,
+          "nombre_avis": 310,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 2.5
+          },
+          "equipements": [
+            "Service de majordome d'Ugnaught privé",
+            "Accès exclusif aux casinos VIP",
+            "Dégustation de vins rares de la galaxie",
+            "Héliport privé"
+          ],
+          "reglement_interieur": [
+            "Pas de triche au Sabacc",
+            "Cape de soirée recommandée pour les dîners"
+          ],
+          "description": "Le sommet du style et de l'élégance galactique. Décor blanc épuré, finitions en or brillant et vue hypnotique sur les nuages orangés au coucher du soleil."
+        },
+        {
+          "id_logement": "BES-002",
+          "titre": "Studio Déco Années 80 dans le Quartier Industriel Tibanna",
+          "type_propriete": "Loft industriel",
+          "hote": {
+            "nom": "Lobot",
+            "superhote": true,
+            "note_hote": 4.9,
+            "delai_reponse": "immédiat (interface directe)"
+          },
+          "tarif_credits_par_nuit": 190,
+          "note_moyenne": 4.78,
+          "nombre_avis": 142,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Insonorisation industrielle",
+            "Ascenseur direct vers les plateformes de gaz",
+            "Décoration néon rétro"
+          ],
+          "reglement_interieur": [
+            "Port du casque de protection obligatoire dans le hall d'entrée"
+          ],
+          "description": "Un espace urbain tendance situé à proximité des usines de traitement de gaz Tibanna. Parfait pour les jeunes actifs et ingénieurs de passage."
+        },
+        {
+          "id_logement": "BES-003",
+          "titre": "Appartement Familial Cosy avec Balcon Cloud-View",
+          "type_propriete": "Appartement de haut standing",
+          "hote": {
+            "nom": "Trevor V.",
+            "superhote": false,
+            "note_hote": 4.65,
+            "delai_reponse": "dans les 2 heures"
+          },
+          "tarif_credits_par_nuit": 260,
+          "note_moyenne": 4.71,
+          "nombre_avis": 89,
+          "capacite": {
+            "voyageurs": 5,
+            "chambres": 3,
+            "lits": 4,
+            "salles_de_bain": 2
+          },
+          "equipements": [
+            "Espace de jeu pour enfants",
+            "Cuisine américaine entièrement intégrée",
+            "Telescope anti-brouillard"
+          ],
+          "reglement_interieur": [
+            "Ne rien jeter par-dessus le balcon"
+          ],
+          "description": "Idéal pour les vacances en famille au-dessus des nuages. Profitez de l'air pur et des promenades sur les plazas flottantes de la cité."
+        },
+        {
+          "id_logement": "BES-004",
+          "titre": "Chambre d'Hôte Intimiste chez l'Habitant - Niveau Médian",
+          "type_propriete": "Chambre chez l'habitant",
+          "hote": {
+            "nom": "Uggo U.",
+            "superhote": true,
+            "note_hote": 4.82,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 95,
+          "note_moyenne": 4.68,
+          "nombre_avis": 67,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Atelier de mécanique partagé",
+            "Petit déjeuner Ugnaught traditionnel",
+            "Accès rapide aux transports publics"
+          ],
+          "reglement_interieur": [
+            "Respecter le travail des techniciens matinaux"
+          ],
+          "description": "Découvrez les coulisses de Cloud City avec un habitant chaleureux. Chambre confortable, propre et extrêmement bien située."
+        }
+      ]
+    },
+    {
+      "nom": "Endor (Lune forestière)",
+      "region": "Bordure Extérieure",
+      "secteur": "Secteur Moddell",
+      "climat": "Tempéré",
+      "terrain": "Forêts géantes, montagnes, savanes",
+      "gravite": "0.85 G",
+      "diametre_km": 4900,
+      "periode_rotation_heures": 18,
+      "periode_revolution_jours": 401,
+      "population": 30000000,
+      "capitales_villes_principales": [
+        "Village de l'Arbre d'Bright Tree"
+      ],
+      "especes_natives": [
+        "Ewoks",
+        "Duloks",
+        "Yuzzums"
+      ],
+      "affiliations_majeures": [
+        "Alliance Rebelle",
+        "Tribu Ewok"
+      ],
+      "evenements_marquants": [
+        "Bataille d'Endor et destruction du générateur de bouclier",
+        "Chute finale de l'Empire et mort de Palpatine"
+      ],
+      "description": "Lune couverte de denses forêts d'arbres séculaires colossaux. Abritait le générateur du bouclier protecteur de la seconde Étoile de la Mort.",
+      "logements": [
+        {
+          "id_logement": "END-001",
+          "titre": "Cabane Éco-Luxe au Sommet des Arbres Séquoias",
+          "type_propriete": "Cabane perchée dans la canopée",
+          "hote": {
+            "nom": "Chef Chirpa",
+            "superhote": true,
+            "note_hote": 4.98,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 220,
+          "note_moyenne": 4.93,
+          "nombre_avis": 185,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 3,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Ponts suspendus entre les cabanes",
+            "Feu de camp sous les étoiles",
+            "Repas Ewok traditionnel offert",
+            "Tyrolienne privée"
+          ],
+          "reglement_interieur": [
+            "Interdiction d'allumer de grands feux non surveillés",
+            "Révérence envers les anciens de la tribu"
+          ],
+          "description": "Inoubliable séjour dans un authentique village Ewok à 40 mètres du sol. Admirez la majesté de la forêt géante depuis votre terrasse en bois sculpté."
+        },
+        {
+          "id_logement": "END-002",
+          "titre": "Bunker Impérial Reconverti en Eco-Loft",
+          "type_propriete": "Bunker militaire reconditionné",
+          "hote": {
+            "nom": "Ketan (Ancien Rebelle)",
+            "superhote": false,
+            "note_hote": 4.7,
+            "delai_reponse": "dans les 2 heures"
+          },
+          "tarif_credits_par_nuit": 140,
+          "note_moyenne": 4.62,
+          "nombre_avis": 94,
+          "capacite": {
+            "voyageurs": 6,
+            "chambres": 2,
+            "lits": 4,
+            "salles_de_bain": 2
+          },
+          "equipements": [
+            "Speederbikes de location sur place",
+            "Portes en acier renforcé",
+            "Panneaux solaires sous canopée",
+            "Cinéma projecteur"
+          ],
+          "reglement_interieur": [
+            "Ne pas vandaliser les vestiges historiques impériaux"
+          ],
+          "description": "Dormez dans un morceau d'histoire galactique ! L'ancien bunker du générateur de bouclier transformé en espace de vie moderne et sécurisé."
+        },
+        {
+          "id_logement": "END-003",
+          "titre": "Nid d'Aigle Romantique pour Deux personnes",
+          "type_propriete": "Nid suspendu biodynamique",
+          "hote": {
+            "nom": "Wicket W. Warrick",
+            "superhote": true,
+            "note_hote": 4.99,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 180,
+          "note_moyenne": 4.96,
+          "nombre_avis": 240,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Lit rond suspendu avec vue sur la jungle",
+            "Lit de baies sauvages au petit-déjeuner",
+            "Hamac XXL"
+          ],
+          "reglement_interieur": [
+            "Pas de chaussures à l'intérieur"
+          ],
+          "description": "Un petit cocon de bois et de tissages naturels perché dans un arbre séculaire. Idéal pour un séjour romantique et poétique au milieu de la nature."
+        },
+        {
+          "id_logement": "END-004",
+          "titre": "Camp de Tentes Suspendues pour Aventuriers",
+          "type_propriete": "Tente de canopée",
+          "hote": {
+            "nom": "Logray",
+            "superhote": false,
+            "note_hote": 4.5,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 65,
+          "note_moyenne": 4.41,
+          "nombre_avis": 58,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 2,
+            "salles_de_bain": 0.5
+          },
+          "equipements": [
+            "Matériel d'escalade fourni",
+            "Feu de camp communautaire au sol",
+            "Guide de survie en forêt"
+          ],
+          "reglement_interieur": [
+            "Attention aux Goraxes nocturnes"
+          ],
+          "description": "Pour les amoureux de sensations fortes. Dormez suspendu entre les branches géantes dans une tente légère entièrement sécurisée."
+        }
+      ]
+    },
+    {
+      "nom": "Kamino",
+      "region": "Espace Sauvage / Hors-Galaxie",
+      "secteur": "Labyrinthe de Rishi",
+      "climat": "Tempétueux / Pluvieux en continu",
+      "terrain": "Océan mondial",
+      "gravite": "1.0 G",
+      "diametre_km": 19720,
+      "periode_rotation_heures": 27,
+      "periode_revolution_jours": 463,
+      "population": 1000000000,
+      "capitales_villes_principales": [
+        "Tipoca City"
+      ],
+      "especes_natives": [
+        "Kaminoans"
+      ],
+      "affiliations_majeures": [
+        "République Galactique",
+        "Empire Galactique"
+      ],
+      "evenements_marquants": [
+        "Création et entraînement secrètement commandés de l'Armée de Clones républicaine",
+        "Combats entre Obi-Wan Kenobi et Jango Fett",
+        "Destruction des installations de clonage par l'Empire"
+      ],
+      "description": "Monde océanique perpétuellement balayé par d'immenses tempêtes et des pluies diluviennes. Les Kaminoans, maîtres du clonage génétique, y vivaient dans des cités sur pilotis ultra-modernes.",
+      "logements": [
+        {
+          "id_logement": "KAM-001",
+          "titre": "Suite Panoramic Ultra-Pure à Tipoca City",
+          "type_propriete": "Appartement futuriste sur pilotis",
+          "hote": {
+            "nom": "Lama Su",
+            "superhote": true,
+            "note_hote": 4.92,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 550,
+          "note_moyenne": 4.89,
+          "nombre_avis": 104,
+          "capacite": {
+            "voyageurs": 3,
+            "chambres": 1,
+            "lits": 2,
+            "salles_de_bain": 2
+          },
+          "equipements": [
+            "Insonorisation totale contre la pluie et les tempêtes",
+            "Éclairage ultraviolet réglable",
+            "Incinérateur stérile",
+            "Service de clone majordome"
+          ],
+          "reglement_interieur": [
+            "Maintenir un niveau d'hygiène absolu",
+            "Interdiction d'introduire des échantillons biologiques externes"
+          ],
+          "description": "Une suite au design minimaliste blanc pur offrant une vue spectaculaire sur les vagues déchaînées de l'océan mondial de Kamino."
+        },
+        {
+          "id_logement": "KAM-002",
+          "titre": "Module Pod Indépendant avec Vue Sous-Marine",
+          "type_propriete": "Capsule sous-marine",
+          "hote": {
+            "nom": "Taun We",
+            "superhote": true,
+            "note_hote": 4.98,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 380,
+          "note_moyenne": 4.93,
+          "nombre_avis": 87,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Hublot géant immersif sous la mer",
+            "Système de régulation de pression atmosphérique",
+            "Petit-déjeuner synthétique personnalisé"
+          ],
+          "reglement_interieur": [
+            "Pas de bruits violents sous l'eau"
+          ],
+          "description": "Ancré sous les vagues sous la cité principale. Observez la faune aquatique géante dans le calme absolu des profondeurs."
+        },
+        {
+          "id_logement": "KAM-003",
+          "titre": "Chambre Privée dans le Complexe Résidentiel des Scientifiques",
+          "type_propriete": "Chambre dans complexe moderne",
+          "hote": {
+            "nom": "Ko Sai",
+            "superhote": false,
+            "note_hote": 4.4,
+            "delai_reponse": "dans les 4 heures"
+          },
+          "tarif_credits_par_nuit": 160,
+          "note_moyenne": 4.38,
+          "nombre_avis": 41,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Bassin de régénération hydrothérapeutique",
+            "Connexion réseau scientifique",
+            "Imperméables haute résistance fournis"
+          ],
+          "reglement_interieur": [
+            "Pass de sécurité à porter en permanence"
+          ],
+          "description": "Chambre fonctionnelle et épurée au cœur du complexe de recherche. Idéale pour les visiteurs professionnels et délégués."
+        },
+        {
+          "id_logement": "KAM-004",
+          "titre": "Hangar-Loft pour Vaisseau & Espace de Vie VIP",
+          "type_propriete": "Loft privé avec hangar privé",
+          "hote": {
+            "nom": "Boba F. (Gestionnaire)",
+            "superhote": true,
+            "note_hote": 4.85,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 480,
+          "note_moyenne": 4.81,
+          "nombre_avis": 62,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 2
+          },
+          "equipements": [
+            "Atelier de maintenance pour chasseur",
+            "Plateforme d'atterrissage privée couverte",
+            "Système de repoussage des tempêtes"
+          ],
+          "reglement_interieur": [
+            "Pas de tests de propulseurs au-dessus des cités"
+          ],
+          "description": "Atterrissez directement à l'abri de la pluie torrentielle. Un espace haut de gamme pensé pour les pilotes exigeants et chasseurs de primes."
+        }
+      ]
+    },
+    {
+      "nom": "Geonosis",
+      "region": "Bordure Extérieure",
+      "secteur": "Secteur Arkanis",
+      "climat": "Aride / Chaud",
+      "terrain": "Canyons de roche rouge, déserts de rocaille, ruches souterraines",
+      "gravite": "0.9 G",
+      "diametre_km": 11370,
+      "periode_rotation_heures": 30,
+      "periode_revolution_jours": 256,
+      "population": 100000000,
+      "capitales_villes_principales": [
+        "Ruches Geonosiennes (ex: Ruche Stalgasin)"
+      ],
+      "especes_natives": [
+        "Geonosiens"
+      ],
+      "affiliations_majeures": [
+        "Confédération des Systèmes Indépendants (CSI / Séparatistes)"
+      ],
+      "evenements_marquants": [
+        "Première Bataille de Geonosis déclenchant la Guerre des Clones",
+        "Arène de Petranaki (exécution ratée des Jedi et de Padmé)",
+        "Conception initiale des plans de l'Étoile de la Mort"
+      ],
+      "description": "Planète désertique de roches rouges ceinturée par un anneau d'astéroïdes. Ses habitants insectoroïdes géraient d'immenses usines automatisées de droids de combat.",
+      "logements": [
+        {
+          "id_logement": "GEO-001",
+          "titre": "Appartement Alvéolaire de Luxe dans la Ruche Stalgasin",
+          "type_propriete": "Logement alvéolaire en roche rouge",
+          "hote": {
+            "nom": "Poggle le Bref",
+            "superhote": false,
+            "note_hote": 4.3,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 140,
+          "note_moyenne": 4.29,
+          "nombre_avis": 55,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 4,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Climatisation naturelle par puits de ventilation",
+            "Vue sur les flèches rocheuses et les anneaux",
+            "Service de dromadaire géonosien"
+          ],
+          "reglement_interieur": [
+            "Attention aux acoustiques de la ruche",
+            "Ne pas déranger la Reine"
+          ],
+          "description": "Sculpté à l'intérieur d'une flèche de grès rouge géante. Découvrez l'incroyable architecture biologique et alvéolaire des artistes geonosiens."
+        },
+        {
+          "id_logement": "GEO-002",
+          "titre": "Suite VIP avec Vue Panoramique sur l'Arène de Petranaki",
+          "type_propriete": "Loge privée aménagée",
+          "hote": {
+            "nom": "Sun Fac",
+            "superhote": true,
+            "note_hote": 4.75,
+            "delai_reponse": "dans les 2 heures"
+          },
+          "tarif_credits_par_nuit": 280,
+          "note_moyenne": 4.68,
+          "nombre_avis": 89,
+          "capacite": {
+            "voyageurs": 5,
+            "chambres": 2,
+            "lits": 3,
+            "salles_de_bain": 2
+          },
+          "equipements": [
+            "Balcon surplombant l'arène",
+            "Bar approvisionné en nectars locaux",
+            "Protection par champ de force à commande vocale"
+          ],
+          "reglement_interieur": [
+            "Interdit de jeter des objets dans l'arène"
+          ],
+          "description": "Assistez aux spectacles traditionnels depuis votre salon privé. Un confort moderne niché dans une structure rocailleuse millénaire."
+        },
+        {
+          "id_logement": "GEO-003",
+          "titre": "Canyon Eco-Camp sous les Étoiles et les Anneaux",
+          "type_propriete": "Tente nomade renforcée",
+          "hote": {
+            "nom": "KlikKlak",
+            "superhote": true,
+            "note_hote": 4.91,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 60,
+          "note_moyenne": 4.82,
+          "nombre_avis": 41,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 2,
+            "salles_de_bain": 0.5
+          },
+          "equipements": [
+            "Lampe solaire longue durée",
+            "Combinaisons rafraîchissantes",
+            "Télescope pour observer les anneaux de poussière"
+          ],
+          "reglement_interieur": [
+            "Économiser l'eau potable"
+          ],
+          "description": "Pour les voyageurs en quête de calme absolu. Établi dans un canyon désertique à l'écart des ruches bruyantes."
+        },
+        {
+          "id_logement": "GEO-004",
+          "titre": "Loft Industriel Réaménagé dans une Ancienne Usine de Droïdes",
+          "type_propriete": "Loft style fonderie",
+          "hote": {
+            "nom": "Gizor D.",
+            "superhote": false,
+            "note_hote": 4.2,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 110,
+          "note_moyenne": 4.15,
+          "nombre_avis": 38,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Décoration avec pièces d'usines recyclées",
+            "Grand espace de travail",
+            "Serviteurs droïdes B1 décommissionnés"
+          ],
+          "reglement_interieur": [
+            "Ne pas réactiver les chaînes de montage"
+          ],
+          "description": "Un espace de vie brut et atypique situé dans un ancien complexe de fabrication de la Confédération des Systèmes Indépendants."
+        }
+      ]
+    },
+    {
+      "nom": "Mustafar",
+      "region": "Bordure Extérieure",
+      "secteur": "Secteur Atravis",
+      "climat": "Infernale / Volcanique",
+      "terrain": "Fleuves de lave, montagnes volcaniques, plaines de cendres",
+      "gravite": "1.0 G",
+      "diametre_km": 4200,
+      "periode_rotation_heures": 36,
+      "periode_revolution_jours": 412,
+      "population": 20000,
+      "capitales_villes_principales": [
+        "Château de Darth Vader",
+        "Installations d'extraction de lave Krayt"
+      ],
+      "especes_natives": [
+        "Mustafariens"
+      ],
+      "affiliations_majeures": [
+        "Confédération des Systèmes Indépendants",
+        "Empire Galactique"
+      ],
+      "evenements_marquants": [
+        "Massacre du Conseil Séparatiste par Darth Vader",
+        "Duel mythique au sabre laser entre Obi-Wan Kenobi et Anakin Skywalker",
+        "Construction du Château personnel de Darth Vader"
+      ],
+      "description": "Petite planète volcanique déchirée par les forces marémotrices des géantes gazeuses voisines, lieu d'extraction de minerais rares et refuge obscur du Sith Darth Vader.",
+      "logements": [
+        {
+          "id_logement": "MUS-001",
+          "titre": "Obsidian Fortress Suite avec Vue sur le Fleuve de Lave",
+          "type_propriete": "Forteresse en roche volcanique",
+          "hote": {
+            "nom": "Vaneé",
+            "superhote": true,
+            "note_hote": 4.95,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 650,
+          "note_moyenne": 4.91,
+          "nombre_avis": 98,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 2
+          },
+          "equipements": [
+            "Boucliers thermiques de classe A",
+            "Vitres en quartz réfractaire ultra-résistant",
+            "Chambre de méditation climatisée à 18°C",
+            "Bassin de régénération"
+          ],
+          "reglement_interieur": [
+            "Ne pas approcher les bords du balcon sans combinaison",
+            "Respecter le silence de la forteresse"
+          ],
+          "description": "Construit en pierre d'obsidienne noire. Admirez le spectacle saisissant de la lave en fusion bouillonnant des centaines de mètres plus bas en toute sécurité."
+        },
+        {
+          "id_logement": "MUS-002",
+          "titre": "Station d'Extraction de Lave Convertie en Loft Futuriste",
+          "type_propriete": "Loft industriel sur pilotis répulsive",
+          "hote": {
+            "nom": "Krayt Mining Corp",
+            "superhote": false,
+            "note_hote": 4.5,
+            "delai_reponse": "dans les 3 heures"
+          },
+          "tarif_credits_par_nuit": 210,
+          "note_moyenne": 4.58,
+          "nombre_avis": 47,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Stabilisateurs répulpseurs haute sécurité",
+            "Système de filtration des gaz sulfuriques",
+            "Combinaisons anti-chaleur fournies"
+          ],
+          "reglement_interieur": [
+            "Ne pas désactiver les stabilisateurs de champ gravitique"
+          ],
+          "description": "Logez directement au-dessus des flux magmatiques sur une plateforme minière rétractée. Une expérience de vacances extrême et inoubliable."
+        },
+        {
+          "id_logement": "MUS-003",
+          "titre": "Ecolodge Troglo-Volcanique des Prieurs Mustafariens",
+          "type_propriete": "Habitat troglodyte basalte",
+          "hote": {
+            "nom": "Meneer X.",
+            "superhote": true,
+            "note_hote": 4.88,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 130,
+          "note_moyenne": 4.75,
+          "nombre_avis": 61,
+          "capacite": {
+            "voyageurs": 3,
+            "chambres": 1,
+            "lits": 3,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Isolation thermique naturelle par la roche",
+            "Sauna volcanique naturel",
+            "Repas aux épices minérales locales"
+          ],
+          "reglement_interieur": [
+            "Respecter les rituels de la communauté locale"
+          ],
+          "description": "Profitez de la fraîcheur naturelle des galeries souterraines en basalte. Découvrez l'histoire et la culture fascinante des autochtones Mustafariens."
+        },
+        {
+          "id_logement": "MUS-004",
+          "titre": "Bunker de Sécurité avec Dôme d'Observation Magmatique",
+          "type_propriete": "Bunker hautement sécurisé",
+          "hote": {
+            "nom": "Krennic Security Corp",
+            "superhote": false,
+            "note_hote": 4.3,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 180,
+          "note_moyenne": 4.42,
+          "nombre_avis": 33,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 3,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Générateur d'air purifié",
+            "Cocktail de bienvenue au piment volcanique",
+            "Garde droïde de sécurité"
+          ],
+          "reglement_interieur": [
+            "Fermeture automatique des volets blindés en cas d'éruption"
+          ],
+          "description": "Un refuge ultra-sécurisé au sommet d'une crête de cendres. Idéal pour observer l'activité volcanique intempestive en toute tranquillité."
+        }
+      ]
+    },
+    {
+      "nom": "Kashyyyk",
+      "region": "Moyenne Bordure",
+      "secteur": "Secteur Mytaranor",
+      "climat": "Tropical / Chaud",
+      "terrain": "Jungle dense, arbres Wroshyr géants, lagunes",
+      "gravite": "1.0 G",
+      "diametre_km": 12765,
+      "periode_rotation_heures": 26,
+      "periode_revolution_jours": 381,
+      "population": 45000000,
+      "capitales_villes_principales": [
+        "Kachirho",
+        "Rwookrrorro"
+      ],
+      "especes_natives": [
+        "Wookiees",
+        "Katarns"
+      ],
+      "affiliations_majeures": [
+        "République Galactique",
+        "Alliance Rebelle"
+      ],
+      "evenements_marquants": [
+        "Bataille de Kashyyyk pendant la Guerre des Clones (avec Yoda)",
+        "Asservissement du peuple Wookiee par l'Empire Galactique"
+      ],
+      "description": "Monde couvert de forêts luxuriantes abritant les arbres Wroshyr pouvant atteindre plusieurs kilomètres de hauteur, planète d'origine de Chewbacca.",
+      "logements": [
+        {
+          "id_logement": "KAS-001",
+          "titre": "Cabane Royale dans les Branches de l'Arbre Wroshyr",
+          "type_propriete": "Maison de bois géante dans les arbres",
+          "hote": {
+            "nom": "Tarfful",
+            "superhote": true,
+            "note_hote": 4.99,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 310,
+          "note_moyenne": 4.96,
+          "nombre_avis": 215,
+          "capacite": {
+            "voyageurs": 6,
+            "chambres": 3,
+            "lits": 5,
+            "salles_de_bain": 2
+          },
+          "equipements": [
+            "Passerelles suspendues privées",
+            "Vue sur l'océan et la canopée",
+            "Planches de surf volant",
+            "Petit-déjeuner aux baies Wroshyr"
+          ],
+          "reglement_interieur": [
+            "Interdiction d'abîmer l'écorce des arbres sacrés",
+            "Chiens/animaux bienvenus"
+          ],
+          "description": "Nichée au 40ème niveau de la canopée d'un arbre Wroshyr multimillénaire. Profitez de la brise tropicale et de la beauté de la jungle."
+        },
+        {
+          "id_logement": "KAS-002",
+          "titre": "Villa Lagon sur la Plage de Kachirho",
+          "type_propriete": "Bungalow sur eau",
+          "hote": {
+            "nom": "Attichitcuk",
+            "superhote": true,
+            "note_hote": 4.9,
+            "delai_reponse": "dans les 2 heures"
+          },
+          "tarif_credits_par_nuit": 240,
+          "note_moyenne": 4.87,
+          "nombre_avis": 130,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 1.5
+          },
+          "equipements": [
+            "Accès direct à la plage de sable blanc",
+            "Canoës en bois sculpté",
+            "Filet de détente au-dessus de l'eau turquoise"
+          ],
+          "reglement_interieur": [
+            "Attention aux créatures marines de bord de côte"
+          ],
+          "description": "Le paradis tropical par excellence ! Une magnifique villa sur pilotis entre les racines géantes et les eaux chaudes du lagon."
+        },
+        {
+          "id_logement": "KAS-003",
+          "titre": "Loft Familial Wookiee dans le Village de Rwookrrorro",
+          "type_propriete": "Maison traditionnelle en bois",
+          "hote": {
+            "nom": "Mallatobuck (Malla)",
+            "superhote": true,
+            "note_hote": 4.97,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 170,
+          "note_moyenne": 4.92,
+          "nombre_avis": 178,
+          "capacite": {
+            "voyageurs": 5,
+            "chambres": 2,
+            "lits": 4,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Repas faits maison (Ragoût de racine)",
+            "Mobilier sur mesure ultra-confortable",
+            "Atelier de sculpture sur bois"
+          ],
+          "reglement_interieur": [
+            "Sourire obligatoire",
+            "Respecter la fête du Jour de la Vie"
+          ],
+          "description": "Immergez-vous dans l'hospitalité légendaire des Wookiees. Un logement chaleureux, très spacieux et rempli d'artisanat local."
+        },
+        {
+          "id_logement": "KAS-004",
+          "titre": "Refuge d'Exploration dans l'Ombre de la Nive-Ombre",
+          "type_propriete": "Cabane d'aventure isolée",
+          "hote": {
+            "nom": "Gwarzi",
+            "superhote": false,
+            "note_hote": 4.4,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 85,
+          "note_moyenne": 4.39,
+          "nombre_avis": 44,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 2,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Répulsif biologique contre les Katarns",
+            "Sacs à dos et bâtons d'escalade",
+            "Radio d'urgence"
+          ],
+          "reglement_interieur": [
+            "Ne jamais descendre au niveau du sol sans guide armé"
+          ],
+          "description": "Pour les randonneurs intrépides désireux d'explorer les niveaux inférieurs obscurs et mystérieux de la forêt géante."
+        }
+      ]
+    },
+    {
+      "nom": "Jakku",
+      "region": "Bordure Extérieure",
+      "secteur": "Secteur Inner Jurani",
+      "climat": "Aride",
+      "terrain": "Déserts, plateaux rocheux, cimetière de vaisseaux spatiaux",
+      "gravite": "1.0 G",
+      "diametre_km": 6400,
+      "periode_rotation_heures": 26,
+      "periode_revolution_jours": 358,
+      "population": 25000,
+      "capitales_villes_principales": [
+        "Niima Outpost"
+      ],
+      "especes_natives": [
+        "Teedos"
+      ],
+      "affiliations_majeures": [
+        "Nouvelle République",
+        "Restes de l'Empire"
+      ],
+      "evenements_marquants": [
+        "Bataille finale de Jakku marquant la défaite ultime de l'Empire Galactique",
+        "Lieu où Rey a grandi en ramasseuse d'épaves"
+      ],
+      "description": "Planète désertique isolee et pauvre, célèbre pour son cimetière de Star Destroyers et de croiseurs résultant de l'ultime affrontement de la Guerre Civile Galactique.",
+      "logements": [
+        {
+          "id_logement": "JAK-001",
+          "titre": "Loft Aménagé dans l'Épave d'un AT-AT Impérial",
+          "type_propriete": "Insolite - Véhicule militaire recyclé",
+          "hote": {
+            "nom": "Rey",
+            "superhote": true,
+            "note_hote": 4.98,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 70,
+          "note_moyenne": 4.94,
+          "nombre_avis": 260,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 0.5
+          },
+          "equipements": [
+            "Ressorts de sièges recyclés ultra-confort",
+            "Collecteur d'eau de rosée",
+            "Lunettes de protection contre les tempêtes de sable",
+            "Balançoire suspendue"
+          ],
+          "reglement_interieur": [
+            "Ne pas toucher aux pièces détachées d'Unkar Plutt",
+            "Secouer le sable avant d'entrer"
+          ],
+          "description": "Vivez la vraie vie de ramasseur d'épaves ! Un intérieur chaleureux et ingénieusement décoré à l'intérieur de la carcasse d'un marcheur TB-TT."
+        },
+        {
+          "id_logement": "JAK-002",
+          "titre": "Hut de Terre avec Ombrage à Niima Outpost",
+          "type_propriete": "Hutte désertique",
+          "hote": {
+            "nom": "Unkar Plutt",
+            "superhote": false,
+            "note_hote": 3.8,
+            "delai_reponse": "quelques jours"
+          },
+          "tarif_credits_par_nuit": 35,
+          "note_moyenne": 3.75,
+          "nombre_avis": 80,
+          "capacite": {
+            "voyageurs": 3,
+            "chambres": 1,
+            "lits": 2,
+            "salles_de_bain": 0.5
+          },
+          "equipements": [
+            "Proximité du guichet de portions de nourriture",
+            "Ventilateur à énergie solaire",
+            "Verrouillage basique"
+          ],
+          "reglement_interieur": [
+            "Paiement en portions accepté",
+            "Pas de remboursement"
+          ],
+          "description": "Option très économique à quelques pas du comptoir principal de Niima. Minimaliste mais protège bien du soleil tapant à midi."
+        },
+        {
+          "id_logement": "JAK-003",
+          "titre": "Suite Cosy dans le Pont d'un Star Destroyer Déclassé",
+          "type_propriete": "Vaisseau capital converti",
+          "hote": {
+            "nom": "Kanjiklub Local",
+            "superhote": false,
+            "note_hote": 4.2,
+            "delai_reponse": "dans les 5 heures"
+          },
+          "tarif_credits_par_nuit": 120,
+          "note_moyenne": 4.41,
+          "nombre_avis": 49,
+          "capacite": {
+            "voyageurs": 5,
+            "chambres": 2,
+            "lits": 3,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Vue panoramique depuis la passerelle de commandement",
+            "Générateur à plasma restauré",
+            "Terrasse sur la coque"
+          ],
+          "reglement_interieur": [
+            "Attention aux arêtes de métal rouillé"
+          ],
+          "description": "Prenez de la hauteur au sommet de l'épave de l'Inflictor. Une vue spectaculaire sur le cimetière de vaisseaux à perte de vue."
+        },
+        {
+          "id_logement": "JAK-004",
+          "titre": "Tente Berber-Style dans le Village Sacré de Tuanul",
+          "type_propriete": "Tente désertique de charme",
+          "hote": {
+            "nom": "Lor San Tekka",
+            "superhote": true,
+            "note_hote": 4.96,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 90,
+          "note_moyenne": 4.89,
+          "nombre_avis": 110,
+          "capacite": {
+            "voyageurs": 3,
+            "chambres": 1,
+            "lits": 2,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Tapis faits main",
+            "Thé de bienvenue offert",
+            "Contes et légendes des Jedi au coin du feu",
+            "Système de refroidissement passif"
+          ],
+          "reglement_interieur": [
+            "Respecter la paix du village et de l'Église de la Force"
+          ],
+          "description": "Un havre de paix spirituel et culturel au milieu du désert. Soirées animées autour du feu à écouter les histoires de l'Ancienne République."
+        }
+      ]
+    },
+    {
+      "nom": "Exegol",
+      "region": "Régions Inconnues",
+      "secteur": "Espace Sith",
+      "climat": "Sombre, tempétueux et aride",
+      "terrain": "Désert de fissures, roche noire, citadel géante",
+      "gravite": "1.0 G",
+      "diametre_km": 11100,
+      "periode_rotation_heures": 28,
+      "periode_revolution_jours": 400,
+      "population": 500000,
+      "capitales_villes_principales": [
+        "Citadelle Sith"
+      ],
+      "especes_natives": [],
+      "affiliations_majeures": [
+        "Ordre Sith",
+        "Sith Éternel",
+        "Dernier Ordre"
+      ],
+      "evenements_marquants": [
+        "Résurrection secrète de l'Empereur Palpatine",
+        "Bataille d'Exegol opposant la flotte des citoyens libres aux Chasseurs de Xyston"
+      ],
+      "description": "Monde occulte du Côté Obscur situé profondément dans les Régions Inconnues, bastion secret des cultistes du Sith Éternel et lieu de fabrication de la flotte du Dernier Ordre.",
+      "logements": [
+        {
+          "id_logement": "EXE-001",
+          "titre": "Suite Gothique au Sommet de la Citadelle Sith",
+          "type_propriete": "Forteresse obscure",
+          "hote": {
+            "nom": "Cultiste du Sith Éternel",
+            "superhote": false,
+            "note_hote": 4.1,
+            "delai_reponse": "dans la journée"
+          },
+          "tarif_credits_par_nuit": 666,
+          "note_moyenne": 4.33,
+          "nombre_avis": 33,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Éclairage par éclairs naturels à travers le plafond de verre",
+            "Trône de pierre taillée",
+            "Ambiance sonore ultra-immersive",
+            "Chauffage magmatique souterrain"
+          ],
+          "reglement_interieur": [
+            "Ne pas toucher aux cuves de clonage",
+            "Chuchotements recommandés"
+          ],
+          "description": "Pour les passionnés du Côté Obscur et d'architecture gothique colossale. Une atmosphère ténébreuse unique éclairée par les orages perpétuels."
+        },
+        {
+          "id_logement": "EXE-002",
+          "titre": "Capsule Sécurisée dans le Hangar des Chasseurs Xyston",
+          "type_propriete": "Module d'habitation militaire",
+          "hote": {
+            "nom": "Général Pryde",
+            "superhote": true,
+            "note_hote": 4.7,
+            "delai_reponse": "dans l'heure"
+          },
+          "tarif_credits_par_nuit": 250,
+          "note_moyenne": 4.51,
+          "nombre_avis": 28,
+          "capacite": {
+            "voyageurs": 4,
+            "chambres": 2,
+            "lits": 2,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Bouclier anti-radiations",
+            "Simulateur de vol spatiaux",
+            "Rations militaires haut de gamme"
+          ],
+          "reglement_interieur": [
+            "Accréditation de sécurité requise à l'entrée"
+          ],
+          "description": "Situé au cœur de l'immense flotte enterrée. Impressionnant et ultra-technologique, pour les mordus de technologie spatiale."
+        },
+        {
+          "id_logement": "EXE-003",
+          "titre": "Chambre d'Hôte Troglodyte dans les Fissures de Roche Noire",
+          "type_propriete": "Grotte basaltique sombre",
+          "hote": {
+            "nom": "Ochi de Bestoon",
+            "superhote": false,
+            "note_hote": 3.9,
+            "delai_reponse": "quand il a du réseau"
+          },
+          "tarif_credits_par_nuit": 80,
+          "note_moyenne": 3.95,
+          "nombre_avis": 19,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 0.5
+          },
+          "equipements": [
+            "Projecteur d'alignement astronomique",
+            "Filtre à poussière d'atmosphère",
+            "Speeder nocturne de location"
+          ],
+          "reglement_interieur": [
+            "Ne pas s'aventurer seul dans les failles profondes"
+          ],
+          "description": "Logement sobre et mystérieux taillé directement dans le sol craquelé d'Exegol. Abordable pour les explorateurs de l'Espace Inconnu."
+        },
+        {
+          "id_logement": "EXE-004",
+          "titre": "Sanctuaire d'Alchimie et de Méditation Obscure",
+          "type_propriete": "Temple privé",
+          "hote": {
+            "nom": "Darth Sidious (Automatisé)",
+            "superhote": true,
+            "note_hote": 4.88,
+            "delai_reponse": "immédiat"
+          },
+          "tarif_credits_par_nuit": 500,
+          "note_moyenne": 4.78,
+          "nombre_avis": 45,
+          "capacite": {
+            "voyageurs": 2,
+            "chambres": 1,
+            "lits": 1,
+            "salles_de_bain": 1
+          },
+          "equipements": [
+            "Autel de méditation focaliseur de Force",
+            "Bibliothèque de parchemins Sith",
+            "Insonorisation acoustique totale"
+          ],
+          "reglement_interieur": [
+            "Interdiction d'apporter des artefacts Jedi"
+          ],
+          "description": "Un espace de calme absolu dédié à l'étude des mystères de la galaxie et des forces occultes. Décor luxueux de marbre noir et de bronze."
+        }
+      ]
+    }
+  ]
+}
