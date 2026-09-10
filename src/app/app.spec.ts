@@ -1,12 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
+import { provideZonelessChangeDetection } from '@angular/core';
 
 describe('App', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       imports: [App],
-    })
-      .compileComponents();
+      providers: [provideZonelessChangeDetection()],
+    });
   });
 
   it('should create the app', () => {
@@ -15,10 +16,18 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should initialize isMobile signal to false', () => {
     const fixture = TestBed.createComponent(App);
-    await fixture.whenStable();
+    const app = fixture.componentInstance;
+    expect(app.isMobile()).toBe(false);
+  });
+
+  it('should render navbar components', () => {
+    const fixture = TestBed.createComponent(App);
+    fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, star-bnb');
+
+    expect(compiled.querySelector('app-mobile')).not.toBeNull();
+    expect(compiled.querySelector('app-desktop')).not.toBeNull();
   });
 });
