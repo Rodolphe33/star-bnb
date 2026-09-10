@@ -55,3 +55,25 @@ jobs:
           echo "La branche 'main' vient d'être mise à jour avec 5 nouvelles features."
           echo "Pense à lancer le 'git pull' et le 'npm run build' sur ton serveur personnel !"
           echo "=========================================================="
+
+      # 5. Envoi de l'e-mail de notification avec le log du merge
+      - name: Envoyer l'e-mail de notification
+        if: steps.count_merges.outputs.count >= 5
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com # Remplace par ton serveur SMTP si tu n'utilises pas Gmail (ex: smtp.mail.yahoo.com)
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "🚀 [Release Angular] 5 nouvelles fonctionnalités prêtes à être livrées !"
+          to: ${{ secrets.MAIL_TO }}
+          from: GitHub Actions <${{ secrets.MAIL_USERNAME }}>
+          body: |
+            Bonjour,
+
+            La branche 'main' de ton projet Angular vient d'être mise à jour automatiquement suite à l'intégration de 5 fonctionnalités sur 'develop'.
+
+            📌 Détail des modifications incluses dans cette release :
+            ${{ steps.generate_log.outputs.changelog }}
+
+            ⚙️ Pense à lancer la mise à jour et le build sur ton serveur personnel !
