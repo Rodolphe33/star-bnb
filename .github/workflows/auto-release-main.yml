@@ -1,0 +1,57 @@
+name: Fusion Automatique Develop vers Main (Release tous les 5 Features)
+
+on:
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: write
+
+jobs:
+  check-and-merge-to-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Récupération de l'historique complet pour pouvoir compter les commits
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. Vérification du nombre de features intégrées dans develop
+      - name: Compter les merges de features sur develop
+        id: count_merges
+        run: |
+          git fetch origin main develop
+
+          # Compte le nombre de commits de merge depuis la branche feature/ présents sur develop mais pas encore sur main
+          FEATURE_COUNT=$(git log origin/main..origin/develop --oneline --grep="merge: feat" -i | wc -l)
+          echo "Nombre de fonctionnalités à livrer : $FEATURE_COUNT"
+
+          # Exporte la variable pour la suite du job
+          echo "count=$FEATURE_COUNT" >> $GITHUB_OUTPUT
+
+      # 3. Merge dans main si le seuil de 5 est atteint
+      - name: Fusionner develop vers main
+        if: steps.count_merges.outputs.count >= 5
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout main
+          git pull origin main
+          git merge --no-ff origin/develop -m "ci(release): fusion automatique de 5 fonctionnalités sur main"
+          git push origin main
+
+          echo "🚀 Seuil atteint ! La branche main a été mise à jour."
+
+      # 4. Message de rappel dans les logs pour la livraison sur ton serveur
+      - name: Notification de livraison requise
+        if: steps.count_merges.outputs.count >= 5
+        run: |
+          echo "=========================================================="
+          echo "📢 RAPPEL DE LIVRAISON SERVEUR 📢"
+          echo "La branche 'main' vient d'être mise à jour avec 5 nouvelles features."
+          echo "Pense à lancer le 'git pull' et le 'npm run build' sur ton serveur personnel !"
+          echo "=========================================================="
