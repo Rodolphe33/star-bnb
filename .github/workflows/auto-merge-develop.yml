@@ -1,0 +1,48 @@
+name: Validation et Merge Automatique vers Develop
+
+# Le script se déclenche quand tu pushes sur une branche de dev ou de fix (pas directement sur develop ou main)
+on:
+  push:
+    branches:
+      - 'feat/**'
+      - 'fix/**'
+      - 'feature-*'
+      - 'fix-*'
+      - 'dev/*'
+
+jobs:
+  test-and-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Récupération du code source
+      - name: Checkout du code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Récupère tout l'historique nécessaire pour le merge
+
+      # 2. Configuration de Node.js (compatible Angular 22)
+      - name: Configuration de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm' # Accélère les exécutions futures en mettant le cache npm en mémoire
+
+      # 3. Installation des dépendances du projet
+      - name: Installation des dépendances
+        run: npm ci
+
+      # 4. Lancement des tests Angular en mode CI (exécute les tests une fois sans rester en écoute)
+      - name: Exécution des tests Angular
+        run: npm test
+
+      # 5. Fusion sur develop uniquement si l'étape précédente (les tests) a réussi
+      - name: Merge automatique sur develop
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin develop:develop
+          git checkout develop
+          git merge --no-ff ${{ github.ref_name }} -m "ci: merge automatique de ${{ github.ref_name }} après validation des tests"
+          git push origin develop
