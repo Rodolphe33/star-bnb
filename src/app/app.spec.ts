@@ -1,9 +1,25 @@
 import { TestBed } from '@angular/core/testing';
-import { App } from './app';
 import { provideZonelessChangeDetection } from '@angular/core';
+import { describe, it, expect, beforeEach } from 'vitest';
+import { App } from './app';
 
 describe('App', () => {
   beforeEach(() => {
+
+    Object.defineProperty(window, 'matchMedia', {
+      writable: true,
+      value: vi.fn().mockImplementation((query: string) => ({
+        matches: false,
+        media: query,
+        onchange: null,
+        addListener: vi.fn(), // pour la compatibilité ancienne
+        removeListener: vi.fn(),
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+        dispatchEvent: vi.fn(),
+      })),
+    });
+
     TestBed.configureTestingModule({
       imports: [App],
       providers: [provideZonelessChangeDetection()],
@@ -24,10 +40,21 @@ describe('App', () => {
 
   it('should render navbar components', () => {
     const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
     fixture.detectChanges();
+
     const compiled = fixture.nativeElement as HTMLElement;
 
-    expect(compiled.querySelector('app-mobile')).not.toBeNull();
-    expect(compiled.querySelector('app-desktop')).not.toBeNull();
+    // Par défaut, isMobile() est false -> Desktop présent, Mobile absent
+    expect(compiled.querySelector('star-desktop')).not.toBeNull();
+    expect(compiled.querySelector('star-mobile')).toBeNull();
+
+    // Passage du signal à true
+    app.isMobile.set(true);
+    fixture.detectChanges();
+
+    // Mobile présent, Desktop absent
+    expect(compiled.querySelector('star-mobile')).not.toBeNull();
+    expect(compiled.querySelector('star-desktop')).toBeNull();
   });
 });
