@@ -1,0 +1,21 @@
+<p-menubar >
+  <ng-template #start>
+    <img ngSrc="starwars-rebel-svgrepo-com.svg" alt="resistance" width="200" height="200" pStyleClass="darkMode"/>
+  </ng-template>
+  <ng-template #item>
+    <div class="flex items-center">
+      <button pButton type="button" pStyleClass="">Tout voir</button>
+      <button pButton type="button" pStyleClass="">Logements</button>
+      <button pButton type="button" pStyleClass="">Expériences</button>
+    </div>
+  </ng-template>
+  <ng-template #end>
+    <div class="flex items-center gap-2">
+      <input type="text" pInputText placeholder="Search" class="w-36" />
+      <p-avatar
+        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+        shape="circle"
+      />
+    </div>
+  </ng-template>
+</p-menubar>
