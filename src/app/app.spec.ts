@@ -38,7 +38,7 @@ describe('App', () => {
     expect(app.isMobile()).toBe(false);
   });
 
-  it('should render desktop navbar by default and mobile navbar when isMobile is true', () => {
+  it('should render navbar components', () => {
     const fixture = TestBed.createComponent(App);
     const app = fixture.componentInstance;
     fixture.detectChanges();
