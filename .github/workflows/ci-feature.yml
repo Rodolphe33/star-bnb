@@ -1,0 +1,77 @@
+name: Validation et Merge conditionnel de la feature vers Develop
+
+# Le script se déclenche quand tu pushes sur une branche de dev ou de fix (pas directement sur develop ou main)
+on:
+  push:
+    branches:
+      - 'feat/**'
+      - 'fix/**'
+      - 'feat-*'
+      - 'fix-*'
+      - 'dev/*'
+
+# Autorise le bot GitHub Actions à pousser du code sur le dépôt
+permissions:
+  contents: write
+
+jobs:
+  test-and-conditional-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Récupération du code source
+      - name: Checkout du code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. Configuration de Node.js (compatible Angular 22)
+      - name: Configuration de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm' # Accélère les exécutions futures en mettant le cache npm en mémoire
+
+      # 3. Installation des dépendances du projet
+      - name: Installation des dépendances
+        run: npm ci
+
+      # 4. Lancement des tests Angular en mode CI (exécute les tests une fois sans rester en écoute)
+      - name: Exécution des tests Angular
+        run: npm test
+
+      # 5. Vérification de la présence du mot-clé dans le dernier message de commit
+      - name: Vérifier la présence du déclencheur de merge
+        id: check_keyword
+        run: |
+          # Mot-clé à rechercher dans le message du commit
+          KEYWORD="[ready]"
+
+          # Récupération du message du dernier commit
+          COMMIT_MSG=$(git log -1 --pretty=format:"%s")
+          echo "Message du commit : $COMMIT_MSG"
+
+          if [[ "$COMMIT_MSG" == *"$KEYWORD"* ]]; then
+            echo "can_merge=true" >> $GITHUB_OUTPUT
+            echo "✅ Mot-clé '$KEYWORD' trouvé dans le commit. Le merge sera exécuté."
+          else
+            echo "can_merge=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ Mot-clé '$KEYWORD' absent. Validation des tests uniquement (pas de merge)."
+          fi
+
+      # 6. Fusion automatique sur develop si les tests ont réussi ET que le mot-clé est présent
+      - name: Merge automatique sur develop
+        if: success() && steps.check_keyword.outputs.can_merge == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin develop
+          git checkout develop
+          git pull origin develop
+
+          # Merge de la branche feature courante
+          git merge --no-ff ${{ github.ref_name }} -m "ci: merge de ${{ github.ref_name }} sur develop (déclenché par [ready])"
+          git push origin develop
+
+          echo "🚀 Branche ${{ github.ref_name }} fusionnée avec succès sur develop !"
