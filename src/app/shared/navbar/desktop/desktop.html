@@ -1,22 +1,51 @@
-<header class="navbar flex p-2 justify-content-between ">
-  <a class="flex gap-2 align-items-center">
-    <img ngSrc="/starwars-rebel-svgrepo-com.svg" alt="logo resistance" width="200" height="200"/>
+<header class="navbar flex overflow-hidden p-2 justify-content-between">
+  <a class="flex gap-2 align-items-center" href="/">
+    <img ngSrc="/starwars-rebel-svgrepo-com.svg" alt="logo resistance" width="200" height="200" />
   </a>
 
-
-    <div class="flex items-center">
+  <section class="flex-grow-1 align-content-center">
+    <div class="flex items-center h-2rem gap-3 w-full">
       <button pButton type="button" pStyleClass="">Tout voir</button>
       <button pButton type="button" pStyleClass="">Logements</button>
       <button pButton type="button" pStyleClass="">Expériences</button>
     </div>
+    <form class="flex pt-3 w-full align-items-center" [formGroup]="form" (ngSubmit)="submit()">
+      <p-iftalabel>
+        <p-select
+          [options]="planets"
+          [checkmark]="true"
+          optionLabel="label"
+          placeholder="Rechercher une destination"
+          scrollHeight="auto"
+          class="md:w-64 h-4rem"
+          [pt]="{ option: { class: 'flex-row-reverse justify-between' } }"
+          id="destination"
+        />
+        <label for="destination">Destination</label>
+      </p-iftalabel>
+      <p-iftalabel>
+        <input type="text" class="md:w-64 h-4rem" id="date" />
+        <label for="date">Dates</label>
+      </p-iftalabel>
+      <p-iftalabel>
+        <p-icon-field>
+          <input type="text" class="md:w-64 h-4rem" id="person" />
+          <p-inputicon>
+            <svg data-p-icon="search" />
+          </p-inputicon>
+        </p-icon-field>
+        <label for="person">Voyageurs</label>
+      </p-iftalabel>
+    </form>
+  </section>
 
-
-    <div class="flex items-center gap-2">
-      <input type="text" pInputText placeholder="Search" class="w-36" />
-      <p-avatar
-        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
-        shape="circle"
-      />
-    </div>
-
+  <section class="flex items-center gap-2">
+    <button pButton type="button" pStyleClass="">Tout voir</button>
+    <button pButton type="button" pStyleClass="">Logements</button>
+    <button pButton type="button" pStyleClass="">Expériences</button>
+    <p-avatar
+      image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+      shape="circle"
+    />
+  </section>
 </header>
